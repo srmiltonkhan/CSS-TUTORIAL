@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Design By Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --menu-wide: 250px;
+            --text-white: #fff;
+            --header-footer-bg-color: #0967C7;
+        }
+        .grid-container{
+            display: grid;
+            transition: 0.3s;
+            grid-template-columns: var(--menu-wide) auto auto auto auto auto;
+        }
+        .grid-container > div{
+            /* border: 1px solid #292936; */
+            text-align: center;
+            
+        }
+        .header{
+            position: fixed;
+            grid-column: 2 / 7;
+            height: 40px;
+            width: calc(100% - var(--menu-wide));
+            left: var(--menu-wide);
+            background-color: var(--header-footer-bg-color);
+        }
+        .menu{
+          grid-row: 1/5;
+          position: fixed;
+          height: 100%;
+          width: var(--menu-wide);
+          background-color: #0F143C;
+          color: var(--text-white);
+          
+        }
+        .main-content{
+            grid-column: 2/ 7 ;
+            box-sizing: border-box;
+        }
+        .footer{
+            grid-column: 2/7;
+            height: 25px;
+            position: fixed;
+            bottom: 0;
+            width: calc(100% - var(--menu-wide));
+            left: var(--menu-wide);
+            background-color: var(--header-footer-bg-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <h1>Dashbaord</h1>
+        </div>
+        <div class="menu">
+            <h3>Menu</h3>
+        </div>
+        <div class="main-content">
+            <h1>Main Content</h1>
+            Sit magna et ipsum stet stet clita et sadipscing clita lorem, diam magna et invidunt et ipsum sed dolore et stet. Kasd clita ut et sanctus aliquyam magna et sadipscing, rebum et ipsum justo et dolores amet vero ipsum lorem. Duo ea nonumy sanctus accusam tempor nonumy. Amet et erat voluptua ea sadipscing est diam labore, invidunt est est amet sed erat clita. Labore dolor consetetur dolor erat amet lorem, accusam sit clita amet amet vero sea sea. Sit et takimata eirmod ipsum sea amet sadipscing dolor ut. Sadipscing et elitr voluptua dolore at ut ipsum, no amet sit rebum sea, tempor clita ea consetetur stet ipsum justo, duo kasd at ipsum erat clita. Labore lorem tempor sit diam dolore no dolor dolores. Vero amet eos takimata diam no lorem diam lorem, diam voluptua est voluptua sed invidunt lorem, rebum accusam duo voluptua amet voluptua sed et. Ut ut lorem eos dolore dolor, vero nonumy ut duo gubergren. Gubergren sed sit magna nonumy, dolores magna sea sanctus sadipscing eirmod. Invidunt voluptua sed consetetur amet clita sadipscing stet sanctus. No consetetur et justo amet et eirmod. Duo et diam ipsum sit nonumy, ea takimata lorem sit ut kasd, nonumy consetetur dolor diam tempor voluptua no accusam rebum, tempor sed duo dolore amet ipsum, justo et nonumy no et sanctus at at duo, duo ea dolor elitr est sanctus. Gubergren amet gubergren justo amet invidunt labore dolor clita. Dolores lorem sadipscing vero labore et et est. Voluptua dolor labore lorem takimata. Elitr vero sadipscing vero amet lorem diam, clita clita takimata amet eos. Stet lorem lorem ea dolor et nonumy sed sadipscing sit. Ipsum duo eos at eirmod, et stet ipsum dolore labore et sed sanctus clita at. Diam ipsum vero sadipscing elitr et est ipsum no stet. Et sit consetetur et clita, aliquyam eos amet justo clita kasd. Et dolore dolores ipsum labore amet labore lorem at duo. Ipsum clita sit takimata vero eos, voluptua sadipscing sed sea elitr magna erat. Voluptua gubergren ut justo ipsum et et sea duo. Ipsum voluptua erat kasd dolore tempor et sea justo sed, sed et nonumy gubergren clita sit. Dolor kasd sit stet no sed eirmod sit diam, no sea labore et eos lorem elitr voluptua, erat sit ut labore ipsum, lorem vero sit lorem sed takimata magna dolor dolore, diam stet et ea amet lorem, amet tempor magna sit amet et, et takimata elitr nonumy diam elitr ipsum et. Et duo ut labore at dolor. Labore consetetur gubergren et eirmod ipsum sit et gubergren. Kasd sit amet clita vero gubergren vero, gubergren vero amet voluptua gubergren invidunt, consetetur at justo nonumy sit, kasd amet labore amet elitr sadipscing. Lorem et at eirmod sed et et ea, et dolore no et ipsum sadipscing dolor eos sanctus, aliquyam duo voluptua lorem duo eirmod at ut dolores. Et sed rebum amet lorem erat dolor gubergren lorem erat. Rebum magna dolores voluptua sed sed. Labore erat amet et diam diam. Lorem sanctus et et takimata takimata, dolor gubergren invidunt et voluptua magna, vero vero amet dolor diam, sadipscing sea diam magna kasd dolor dolor no, lorem sadipscing invidunt sit magna dolore tempor. Et accusam voluptua amet at rebum dolor est et, voluptua eos sanctus amet stet et, magna magna ipsum stet amet aliquyam elitr, sit stet lorem ipsum eos ea sadipscing, diam invidunt et erat dolores. Et diam sea at sanctus magna sit dolores. Lorem aliquyam diam sadipscing at elitr clita erat sed lorem, gubergren sadipscing ipsum sadipscing ea est. Sadipscing gubergren aliquyam accusam dolore, et lorem ipsum ipsum vero vero, sit at aliquyam labore et nonumy voluptua justo nonumy invidunt. Accusam invidunt et dolor accusam et lorem dolore rebum. Diam diam kasd justo sanctus. Consetetur consetetur diam gubergren amet no accusam elitr, et diam tempor dolores rebum tempor no labore. Diam et labore amet est sed, erat sanctus sanctus no duo sea. Rebum sed justo et elitr ipsum. Kasd at lorem justo erat dolor amet dolor, sit ipsum dolore dolores diam sea clita no tempor, duo sea at takimata eos sed et sit. Diam elitr at est et accusam magna sed stet, ut clita lorem duo duo sit accusam gubergren no. Tempor erat no duo nonumy gubergren at labore voluptua est. Accusam kasd sanctus et sanctus nonumy ipsum justo diam. Sed diam at et diam lorem, et consetetur sit eos amet sit, et erat sadipscing nonumy sit, sed aliquyam kasd takimata tempor tempor sanctus est, ea est sit at sea sit erat ipsum lorem et, nonumy takimata dolores consetetur sea diam sit lorem labore, lorem ea dolor diam vero dolores, dolor invidunt et kasd stet dolores, sit amet voluptua duo est sadipscing labore et takimata, duo amet nonumy eos et duo. Ut est lorem est et aliquyam amet, et sed elitr labore et lorem clita, sadipscing stet ipsum ut tempor amet aliquyam. Takimata ea consetetur et clita amet gubergren. Stet nonumy no invidunt clita duo accusam et dolores. Dolor at et et duo nonumy consetetur. Sadipscing at at ea amet invidunt sea amet. Dolor aliquyam duo est dolor sed labore gubergren tempor diam, takimata diam tempor est gubergren sit vero justo erat. Vero ipsum dolores amet gubergren. Lorem labore justo ipsum rebum. Consetetur dolor stet et kasd nonumy rebum sed dolor consetetur, ipsum lorem et voluptua aliquyam sit, takimata sea et ipsum nonumy amet elitr ipsum rebum. Ut gubergren elitr amet invidunt sed ea at. Duo et magna dolores kasd sed, eirmod sit stet duo elitr et rebum et dolore accusam, amet eos ipsum est diam dolor et elitr, diam invidunt labore dolores sed clita tempor eirmod sed sed. Clita sit sanctus lorem dolore sanctus dolor. Erat at consetetur et stet amet lorem erat. Gubergren eos ea vero ut vero amet labore duo labore. Kasd sadipscing at diam eirmod ea aliquyam accusam. Accusam ipsum takimata stet rebum magna et duo est, takimata est sanctus magna sit, dolor takimata amet voluptua sea magna est, accusam et ut aliquyam sit stet ut magna lorem. Et est et at.
+        </div>
+        <!-- <div class="aside">
+            <h3>Aside</h3>
+        </div> -->
+        <div class="footer">
+            <h3>Footer</h3>
+        </div>
+    </div>
+</body>
+</html>
