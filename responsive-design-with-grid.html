@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design with Grid-Template-areas</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: burlywood;
+            height: 100vh;
+            display: grid;
+            grid-template-rows: min-content auto min-content;
+            grid-template-areas: 
+            'h'
+            'm'
+            'm'
+            'm'
+            'f'
+            ;
+           
+
+        }
+        header{
+            grid-area: h;
+            background-color: rgb(255, 255, 255);
+            padding: 5px;
+            height: 80px;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /*action with column*/
+            /* align-content: flex-end;  action with row */
+            align-items: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+        }
+        main{
+            background-color: silver;
+            grid-area: m;
+            height: 90vh;
+            padding: 10px;
+            margin-top: 80px;
+
+        }
+        footer{
+            grid-area: f;
+            padding: 10px;
+            background-color: cadetblue;
+            height: 200px;
+            display: grid;
+            grid-template-areas:
+            'n1 n2 n3'
+            ;
+        }
+        article{
+            display: grid;
+            grid-template-areas: 
+            's1 s2'
+            ;
+        }
+
+        #sec1{grid-area: s1;}
+        #sec2{grid-area: s2;}
+
+        #nav1{grid-area: n1;}
+        #nav2{grid-area: n2;}
+        #nav3{grid-area: n3;}
+
+        @media screen and (max-width: 600px) {
+            footer{
+            grid-template-areas:
+            'n1'
+            'n2'
+            'n3'
+            ;
+        } 
+        article{
+            grid-template-areas: 
+            's1'
+            's2'
+            ;
+        }
+        }
+      
+
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Header</h3>
+    </header>
+    <main>
+        <article>
+            <section id="sec1">Some Text</section>
+            <aside id="sec2">Notice</aside>
+        </article>
+    </main>
+
+    <footer>
+        <nav id="nav1">Useful Link</nav>
+        <nav id="nav2">Contact</nav>
+        <nav id="nav3">Sister Concern</nav>
+    </footer>
+</body>
+</html>
