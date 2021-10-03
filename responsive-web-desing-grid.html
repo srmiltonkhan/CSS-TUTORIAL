@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design with Grid</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            background-color: cornsilk;
+            text-align: center;
+            padding: 1% 7%;
+        }
+
+        .nav-menu{
+            background-color: rgb(43, 172, 71);
+        }
+        .nav-menu a{
+            display: block;
+            text-decoration: none;
+            margin: 10px;
+            color: white;
+            text-align: center;
+            background-color: rgb(175, 8, 119);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .main{
+            background-color: tomato;
+            padding: 10px;
+            color: white;
+        }
+        .aside{
+            background-color: aquamarine;
+            text-align: center;
+            padding: 10px;
+        }
+        .footer{
+            background-color: rgb(38, 55, 153);
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+      
+        [class*="col-"]{
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        [class*="col-"]{
+            float: left;
+            padding: 10px;  
+        }
+        .row::after{
+            content: '';
+            clear: both;
+            display: table;
+            
+        }
+
+        @media screen and (min-width: 600px) {
+        /* For Tablet: */
+        .col-sm-1 {width: 8.33%;}
+        .col-sm-2 {width: 16.66%;}
+        .col-sm-3 {width: 25%;}
+        .col-sm-4 {width: 33.33%;}
+        .col-sm-5 {width: 41.66%;}
+        .col-sm-6 {width: 50%;}
+        .col-sm-7 {width: 58.33%;}
+        .col-sm-8 {width: 66.66%;}
+        .col-sm-9 {width: 75%;}
+        .col-sm-10 {width: 83.33%;}
+        .col-sm-11 {width: 91.66%;}
+        .col-sm-12 {width: 100%;} 
+        [class*="col-"]{
+            height: 100vh;
+           
+        }           
+        }        
+
+        @media screen and (min-width: 768px) {
+        /* For desktop: */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;} 
+        [class*="col-"]{
+            height: 100vh;
+           
+        }           
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Md. Milton Khan</h1>
+    </div>
+    <div class="row">
+        <div class="nav-menu col-sm-4 col-2">
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">Tutorial</a>
+            <a href="#">About</a>
+        </div>
+        <div class="main col-sm-8 col-7">
+            <h1>Im a  man</h1>
+            <h3>Milton</h3>
+            <h1>Web Design Test</h1>
+            <p>Uomini di ciascheduna medesimi di santo sé fragilita bene, quali porgere pericoli liberalita ingannati seguitando nel nome gli, sua sempre del donne cosa sé pieno sogiacere cose. Che e si e potra sua lodato che come delle. Viviamo fermi e dare non raccontare, sua manifesta speranza manifestamente sue che etterno reputiamo alle ancora. Fa apparire e merito alcun io e quale procuratori. Convenevole apparire giudicio coloro giudice il l'acume, e cosí delle furono reputiamo infiniti quali siamo fermi e, iscacciato a l'uomo quella lui essilio essilio, cosa sia sua beati sé dallo parte dio di furono, cosa né non lui.</p>
+        </div>
+        <div class="aside col-sm-12 col-3">
+            <h2>What?</h2>
+            <p>Chania is a city on the island of Crete.</p>
+            <h2>Where?</h2>
+            <p>Crete is a Greek island in the Mediterranean Sea.</p>
+            <h2>How?</h2>
+            <p>You can reach Chania airport from all over Europe.</p>
+        </div>
+    </div>
+    <div class="footer">
+        Copyritht by Milton
+    </div>
+</body>
+</html>
