@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Duration</title>
+    <style>
+        img{
+            max-width: 200px;
+            height: auto;
+            border: 5px solid;
+
+            display: block;
+            margin:0 auto;
+            border-radius: 50%;
+
+            margin-top: 100px;
+
+
+            animation-fill-mode: forwards;
+   
+
+        }
+        img:hover{
+            animation-name: pic-anim;
+            animation-duration: 3s;
+            cursor: pointer;
+        }
+
+        @keyframes pic-anim {
+            0%{
+                
+                border: 5px solid red;
+                top: 250px;
+            }
+            50%{
+                border: 5px solid orange;
+            }
+            100%{
+                border: 5px solid blue;
+                top: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="milton.jpg" alt="">
+</body>
+</html>

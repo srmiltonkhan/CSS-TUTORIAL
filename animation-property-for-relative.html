@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Duration</title>
+    <style>
+        img{
+            max-width: 200px;
+            height: auto;
+            border: 5px solid;
+
+            display: block;
+            margin:0 auto;
+            border-radius: 50%;
+
+            margin-top: 100px;
+            position: relative;
+
+
+            animation-name: pic-anim;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+   
+
+        }
+
+        @keyframes pic-anim {
+            0%{
+                top: 0;
+                left: 0;
+            }
+            50%{
+                top: 100px;
+                right: 700px;
+                border: 5px solid burlywood;
+            }
+            100%{
+               top: 0px;
+               left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="milton.jpg" alt="">
+</body>
+</html>
