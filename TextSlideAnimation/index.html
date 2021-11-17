@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Slide Animation</title>
+    <style>
+
+        .text-slide-animation{
+            border: 1px solid;
+            margin-top: 150px;
+        }
+        .text-slide-animation p{
+            font-size: 60px;
+            text-align: center;
+            margin-left: 50%;
+            transform: translateY(-200%);
+            opacity: 0;
+            animation: slide-in-anim 3s linear forwards;
+        }
+        @keyframes slide-in-anim {
+            20%{
+  
+                color: red;
+            }
+            50%{
+                /* transform: translateX(-80%); */
+                color: blue;
+            }
+            75%{
+                transform: translateX(-52%);
+                color: yellow
+            }
+            100%{
+                transform: translateX(-50%);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="text-slide-animation">
+        <p>Text Slide Animation</p>
+    </div>
+</body>
+</html>
